@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "World Encyclopedia"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "World Encyclopedia-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
